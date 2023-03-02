@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <form action="post">
+        <fieldset>
+            <legend>
+                Detalles de la foto
+            </legend>
+            <!--Titulo-->
+            <div>
+                <p>
+                    Titulo<br>
+                    <input type="text" name="Titulo" required size="80">
+                </p>
+            </div>
+            <!--Descripcion-->
+            <div>
+                <p>
+                    Descripcion<br>
+                    <textarea name="Descripcion" id="Descripcion" cols="80" rows="10"></textarea>
+                </p>
+            </div>            <!--Parte en 2 la pantalla-->
+            <table>
+                <tr>
+                    <td>
+                        <!--Continente-->
+                        <div>
+                            <p>
+                                Continente<br>
+                                <select name="Continente" value="Escoger">
+                                    <option value="Africa">
+                                        Africa
+                                    </option>
+                                    <option value="Asia">
+                                        Asia
+                                    </option>
+                                    <option value="Europa">
+                                        Europa
+                                    </option>
+                                    <option value="Norte America">
+                                        America
+                                    </option>
+                                    <option value="Sudamerica">
+                                        Oceania
+                                    </option>
+                                </select>
+                            </p>
+                        </div>
+                        <!--Pais-->
+                        <div>
+                            <p>
+                                Pais<br>
+                                <select name="Paies" id="Pais"value="Pais">
+                                    <option value="Canada">
+                                        Canada
+                                    </option>
+                                    <option value="Gabacho">
+                                        Estados Unidos
+                                    </option>
+                                    <option value="Anahuac">
+                                        Mexico
+                                    </option>
+                                </select>
+                            </p>
+                        </div>
+                        <!--Ciudad-->
+                        <div>
+                            <p>
+                                Ciudad<br>
+                                <input list="Ciudad"name="Ciudad"size="40">
+                                <datalist id="Ciudad">
+                                    <option value="Caligary">
+                                        Caligary
+                                    </option>
+                                    <option value="Montreal">
+                                        Montreal
+                                    </option>
+                                    <option value="Toronto">
+                                        Toronto
+                                    </option>
+                                    <option value="Vancouber">
+                                        Vancouber
+                                    </option>
+                                    <option value="Tlaxcala">
+                                        Tlaxcala
+                                    </option>
+                                </datalist>
+                            </p>
+                        </div>
+                        <!--Licencia software-->
+                        <div>
+                            <p>
+                                Hacepto la licencia de software
+                                <input type="checkbox" name="Acepto">
+                            </p>
+                        </div>
+                        <!--Califica esta fot-->
+                        <div>
+                            <p>
+                                Califica esta foto:<br>
+                                <input type="number" name="Numerito">
+                            </p>
+                        </div>
+                        <!--Color-->
+                        <div>
+                            <p>
+                                Coleccion de color<br>
+                                <input type="color">
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <!--Copyright-->
+                        <div>
+                            <p>
+                                Copiright?<br>
+                                <input type="radio" name="copy" value="tdr">Todos los derchos reservados<br>
+                                <input type="radio" name="copy" value="cc">Creative Commons<br>
+                                Lisencias Creative Commons<br>
+                                <input type="checkbox" name="CC" value="a">Atribucion<br>
+                                <input type="checkbox" name="CC" value="nc">No comercial<br>
+                                <input type="checkbox" name="CC" value="nhtd">No hay trabajos derivativos<br>
+                                <input type="checkbox" name="CC" value="cpi">Compartir por igual<br>
+                            </p>
+                        </div>
+                        <!--Fecha-->
+                        <div>
+                            <p>
+                                Fecha de toma<br>:
+                                <input type="date" name="Fecha">
+                            </p>
+
+                        </div>
+                        <!--Hora-->
+                        <div>
+                            <p>
+                                Fecha de toma<br>:
+                                <input type="time" name="Hora">
+                            </p>
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--Enviar y Limpiar-->
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
